@@ -4656,6 +4656,10 @@ string catalog::procedure_columns::is_nullable() const
     return result_.get<string>(18, string());
 }
 
+catalog::columns::columns()
+{
+}
+
 catalog::columns::columns(result& find_result)
     : result_(find_result)
 {
