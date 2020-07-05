@@ -1775,6 +1775,7 @@ public:
     class procedures
     {
     public:
+        procedures();
         bool next();                      ///< Move to the next result in the result set.
         string procedure_catalog() const; ///< Fetch procedure catalog.
         string procedure_schema() const;  ///< Fetch procedure schema.
@@ -1792,6 +1793,7 @@ public:
     class procedure_columns
     {
     public:
+        procedure_columns();
         bool next();                           ///< Move to the next result in the result set.
         string procedure_catalog() const;      ///< Fetch procedure catalog.
         string procedure_schema() const;       ///< Fetch procedure schema.

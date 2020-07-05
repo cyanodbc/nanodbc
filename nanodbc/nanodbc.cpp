@@ -4393,6 +4393,10 @@ string catalog::tables::table_remarks() const
     return result_.get<string>(4, string());
 }
 
+catalog::procedures::procedures()
+{
+}
+
 catalog::procedures::procedures(result& find_result)
     : result_(find_result)
 {
@@ -4530,6 +4534,10 @@ string catalog::primary_keys::primary_key_name() const
 {
     // PK_NAME might be NULL
     return result_.get<string>(5);
+}
+
+catalog::procedure_columns::procedure_columns()
+{
 }
 
 catalog::procedure_columns::procedure_columns(result& find_result)
